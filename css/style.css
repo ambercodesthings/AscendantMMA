@@ -1,0 +1,413 @@
+html, body {
+    background-color: black;
+    padding:0;
+    height: 100%;
+    margin: 0;
+    color: #E9E8EF;
+}
+*{
+    font-family:"Barlow", Arial,sans-serif
+}
+
+
+h1 {
+    color: #E9E8EF;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #E9E8EF;
+}
+span {
+    color: #E9E8EF;
+}
+
+p {
+    color: #E9E8EF;
+}
+ #athlete-list {
+    color: #E9E8EF;
+ }
+
+
+/*
+Header styles*/
+header {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.header-content {
+   display: flex;
+   align-items: center;
+   /* justify-content: space-between; */
+   /* width: 100%; */
+   flex-basis: 50%;
+   margin-left: auto;
+   
+  
+}
+
+/*logo style*/
+.logo {
+    max-width: 100px;
+    /* margin: 0 auto; */
+    padding-bottom: 0;
+   padding-top: 20px;
+}
+.logo-container {
+    display: flex;
+   
+    justify-content: space-between; 
+   width: 100%;
+   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+      max-width: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .logo {
+      max-width: 200px;
+    }
+  }
+/*Nav Styles*/
+
+
+
+li {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    text-align: center;
+  }
+
+.nav-links.active {
+    display: flex;
+    
+}
+
+.hamburger {
+    display: block;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.nav-active {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.nav-links li + li {
+    margin-top: 1rem;
+  }
+
+.nav-links a {
+    color: #E9E8EF;
+}
+
+.nav-links a.active {
+    color: #444C22;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #E9E8EF;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 768px) {
+    .logo-container {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width:768px) {
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .nav-links li + li{
+        margin-top: unset;
+        margin-left: 1rem;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+  }
+ 
+
+ 
+
+/* Hero Styles*/
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: url('../media/Black-and-white-sport-fight-boxer_\(24244374201\).jpg') no-repeat center center / cover;
+    color: #E9E8EF;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#hero-heading {
+    font-size: 3rem;
+    letter-spacing: 4.5px;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: transparent;
+    color: #E9E8EF;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 30px 30px;
+    border: solid #444C22;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero h1 animate */
+.word {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+
+/* Countdown Clock */
+ #clock-container {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+    letter-spacing: normal;
+ }
+
+/* Footer */
+
+footer {
+   
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.logo-footer {
+    max-width: 200px;
+    opacity: 75%;
+}
+
+.icon-container {
+  
+    position: relative;
+  
+}
+
+.ig-icon {
+    max-width: 75px;
+   
+    
+}
+
+.shirt-and-email-icon {
+   
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 50px;
+
+}
+
+.shirt-icon  {
+    max-width: 50px;
+    padding-bottom: 5px;
+   
+}
+
+.email-icon {
+    width: 50px;
+    max-width: none;
+    padding-top: 5px;
+    
+}
+
+.icon-with-text {
+    display: flex;
+    align-items: center;
+    
+}
+
+span {
+    margin-left: 10px;
+}
+
+.copyright {
+    color: #E9E8EF;
+    padding-right: 50px;
+   
+
+}
+
+
+/* Roster Page */
+.athlete-list {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 10rem 10rem;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#image-1 {
+    width:500px;
+    filter: grayscale(100%);
+    display: block;
+    margin: auto;
+}
+
+/* Services Page */
+#services {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.services-list {
+    list-style: none;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 75px;
+margin: 0;
+font-size: 1.5rem;
+}
+
+.services-list  li:before {
+	display:		inline-block;		
+  	width:		0; 		
+  	height:		0; 	
+	border-top:		solid transparent;
+	border-bottom: 	solid transparent;
+	border-left:	 solid #444C22;	
+	border-width:	15px;
+	content:		' ';
+	margin-right:	15px;
+   
+}
+
+/* Project Page */
+.project-info {
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+    font-size: 24px;
+}
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+form ul {
+
+    list-style-type: none;
+    padding:left 0;
+    text-align: center;
+    
+    }
+    label {
+        display: block;
+        min-width: 90px;
+        text-align: center;
+    }
+    input,
+    textarea {
+        
+      
+ margin: 10px;
+        padding: 10px;
+        width: 300px;
+        border-radius: 10px;
+        border: 5px solid #444C22;
+    }
+
+    /* About */
+    #image-2 {
+        width:700px;
+        filter: grayscale(100%);
+        display: block;
+        margin: auto;
+        
+   
+    }
+
+    #about-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* projects page */
+
+    @media (max-width:768px) {
+        .project-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .project-info {
+        padding: 20px 100px 10px 100px;
+    }
