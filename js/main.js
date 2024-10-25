@@ -71,9 +71,9 @@ navMenu.addEventListener('mouseleave',()=> {
 
 // Athlete page
 let athletes = [
-    {name: 'Adrian "The Undeniable" Galindo', weightClass:'Welterweight'},
-    {name: 'Oscar De Los Santos', weightClass:'Featherweight'},
-    {name: 'Amanda Bain', weightClass:'Rooster'}
+    {name: 'Craig Jackson', weightClass:'Welterweight'},
+    {name: 'Sam Osteinhauser', weightClass:'Featherweight'},
+    {name: 'Amanda Crossbey', weightClass:'Rooster'}
 ];
 console.log(athletes);
 function showAthleteList() {
